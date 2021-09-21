@@ -139,7 +139,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(378, 198);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
