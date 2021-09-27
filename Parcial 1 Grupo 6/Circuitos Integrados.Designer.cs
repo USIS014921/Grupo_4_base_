@@ -142,7 +142,7 @@ namespace Parcial_1_Grupo_6
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.SpringGreen;
-            this.button1.Location = new System.Drawing.Point(368, 94);
+            this.button1.Location = new System.Drawing.Point(368, 99);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 13;
@@ -176,7 +176,7 @@ namespace Parcial_1_Grupo_6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GreenYellow;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(593, 472);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
