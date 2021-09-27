@@ -42,13 +42,13 @@ namespace Parcial_1_Grupo_6
             this.bnuevo = new System.Windows.Forms.Button();
             this.bprimero = new System.Windows.Forms.Button();
             this.txtclave = new System.Windows.Forms.TextBox();
+            this.proyectoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoDataSet = new Parcial_1_Grupo_6.ProyectoDataSet();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bentrar = new System.Windows.Forms.Button();
-            this.proyectoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proyectoDataSet = new Parcial_1_Grupo_6.ProyectoDataSet();
             this.proyectoTableAdapter = new Parcial_1_Grupo_6.ProyectoDataSetTableAdapters.ProyectoTableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lstnivel = new System.Windows.Forms.ComboBox();
@@ -186,6 +186,16 @@ namespace Parcial_1_Grupo_6
             this.txtclave.Size = new System.Drawing.Size(100, 20);
             this.txtclave.TabIndex = 24;
             // 
+            // proyectoBindingSource
+            // 
+            this.proyectoBindingSource.DataMember = "Proyecto";
+            this.proyectoBindingSource.DataSource = this.proyectoDataSet;
+            // 
+            // proyectoDataSet
+            // 
+            this.proyectoDataSet.DataSetName = "ProyectoDataSet";
+            this.proyectoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtusuario
             // 
             this.txtusuario.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.proyectoBindingSource, "Nombre", true));
@@ -238,16 +248,6 @@ namespace Parcial_1_Grupo_6
             this.bentrar.Text = "Entrar";
             this.bentrar.UseVisualStyleBackColor = true;
             this.bentrar.Click += new System.EventHandler(this.bentrar_Click);
-            // 
-            // proyectoBindingSource
-            // 
-            this.proyectoBindingSource.DataMember = "Proyecto";
-            this.proyectoBindingSource.DataSource = this.proyectoDataSet;
-            // 
-            // proyectoDataSet
-            // 
-            this.proyectoDataSet.DataSetName = "ProyectoDataSet";
-            this.proyectoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // proyectoTableAdapter
             // 
@@ -304,7 +304,7 @@ namespace Parcial_1_Grupo_6
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "Acess";
-            this.Text = "Acess";
+            this.Text = "Login con Acess";
             this.Load += new System.EventHandler(this.Acess_Load);
             ((System.ComponentModel.ISupportInitialize)(this.proyectoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).EndInit();

@@ -56,7 +56,6 @@ namespace Parcial_1_Grupo_6
 
 
         }
-
         private void button3_Click_1(object sender, EventArgs e)
         {
             Acess acess = new Acess();
